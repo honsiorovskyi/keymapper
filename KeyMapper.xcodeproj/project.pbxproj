@@ -10,7 +10,8 @@
 		DB4FCEFD1E15907000DBF45C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4FCEFC1E15907000DBF45C /* AppDelegate.m */; };
 		DB4FCF001E15907000DBF45C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4FCEFF1E15907000DBF45C /* main.m */; };
 		DB4FCF021E15907000DBF45C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4FCF011E15907000DBF45C /* Assets.xcassets */; };
-		DB4FCF051E15907000DBF45C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB4FCF031E15907000DBF45C /* MainMenu.xib */; };
+		DB4FCF051E15907000DBF45C /* Interface.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB4FCF031E15907000DBF45C /* Interface.xib */; };
+		DBEA39A71E159225004FC01E /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBEA39A61E159225004FC01E /* Carbon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,8 +20,10 @@
 		DB4FCEFC1E15907000DBF45C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DB4FCEFF1E15907000DBF45C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DB4FCF011E15907000DBF45C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DB4FCF041E15907000DBF45C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		DB4FCF041E15907000DBF45C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Interface.xib; sourceTree = "<group>"; };
 		DB4FCF061E15907000DBF45C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBEA39A41E1591CE004FC01E /* keymapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keymapper.h; sourceTree = "<group>"; };
+		DBEA39A61E159225004FC01E /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBEA39A71E159225004FC01E /* Carbon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +43,7 @@
 			children = (
 				DB4FCEFA1E15907000DBF45C /* KeyMapper */,
 				DB4FCEF91E15907000DBF45C /* Products */,
+				DBEA39A51E159225004FC01E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,9 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				DB4FCEFB1E15907000DBF45C /* AppDelegate.h */,
+				DBEA39A41E1591CE004FC01E /* keymapper.h */,
 				DB4FCEFC1E15907000DBF45C /* AppDelegate.m */,
 				DB4FCF011E15907000DBF45C /* Assets.xcassets */,
-				DB4FCF031E15907000DBF45C /* MainMenu.xib */,
+				DB4FCF031E15907000DBF45C /* Interface.xib */,
 				DB4FCF061E15907000DBF45C /* Info.plist */,
 				DB4FCEFE1E15907000DBF45C /* Supporting Files */,
 			);
@@ -69,6 +75,14 @@
 				DB4FCEFF1E15907000DBF45C /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DBEA39A51E159225004FC01E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBEA39A61E159225004FC01E /* Carbon.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB4FCF021E15907000DBF45C /* Assets.xcassets in Resources */,
-				DB4FCF051E15907000DBF45C /* MainMenu.xib in Resources */,
+				DB4FCF051E15907000DBF45C /* Interface.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,12 +163,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DB4FCF031E15907000DBF45C /* MainMenu.xib */ = {
+		DB4FCF031E15907000DBF45C /* Interface.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DB4FCF041E15907000DBF45C /* Base */,
 			);
-			name = MainMenu.xib;
+			name = Interface.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -290,6 +304,7 @@
 				DB4FCF0B1E15907000DBF45C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
