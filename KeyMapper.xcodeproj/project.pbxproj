@@ -1,0 +1,297 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB4FCEFD1E15907000DBF45C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4FCEFC1E15907000DBF45C /* AppDelegate.m */; };
+		DB4FCF001E15907000DBF45C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4FCEFF1E15907000DBF45C /* main.m */; };
+		DB4FCF021E15907000DBF45C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4FCF011E15907000DBF45C /* Assets.xcassets */; };
+		DB4FCF051E15907000DBF45C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB4FCF031E15907000DBF45C /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DB4FCEF81E15907000DBF45C /* KeyMapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyMapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB4FCEFB1E15907000DBF45C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DB4FCEFC1E15907000DBF45C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DB4FCEFF1E15907000DBF45C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DB4FCF011E15907000DBF45C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB4FCF041E15907000DBF45C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		DB4FCF061E15907000DBF45C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB4FCEF51E15907000DBF45C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB4FCEEF1E15907000DBF45C = {
+			isa = PBXGroup;
+			children = (
+				DB4FCEFA1E15907000DBF45C /* KeyMapper */,
+				DB4FCEF91E15907000DBF45C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB4FCEF91E15907000DBF45C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB4FCEF81E15907000DBF45C /* KeyMapper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB4FCEFA1E15907000DBF45C /* KeyMapper */ = {
+			isa = PBXGroup;
+			children = (
+				DB4FCEFB1E15907000DBF45C /* AppDelegate.h */,
+				DB4FCEFC1E15907000DBF45C /* AppDelegate.m */,
+				DB4FCF011E15907000DBF45C /* Assets.xcassets */,
+				DB4FCF031E15907000DBF45C /* MainMenu.xib */,
+				DB4FCF061E15907000DBF45C /* Info.plist */,
+				DB4FCEFE1E15907000DBF45C /* Supporting Files */,
+			);
+			path = KeyMapper;
+			sourceTree = "<group>";
+		};
+		DB4FCEFE1E15907000DBF45C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB4FCEFF1E15907000DBF45C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB4FCEF71E15907000DBF45C /* KeyMapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB4FCF091E15907000DBF45C /* Build configuration list for PBXNativeTarget "KeyMapper" */;
+			buildPhases = (
+				DB4FCEF41E15907000DBF45C /* Sources */,
+				DB4FCEF51E15907000DBF45C /* Frameworks */,
+				DB4FCEF61E15907000DBF45C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeyMapper;
+			productName = KeyMapper;
+			productReference = DB4FCEF81E15907000DBF45C /* KeyMapper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB4FCEF01E15907000DBF45C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Denys Honsiorovskyi";
+				TargetAttributes = {
+					DB4FCEF71E15907000DBF45C = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DB4FCEF31E15907000DBF45C /* Build configuration list for PBXProject "KeyMapper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB4FCEEF1E15907000DBF45C;
+			productRefGroup = DB4FCEF91E15907000DBF45C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB4FCEF71E15907000DBF45C /* KeyMapper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB4FCEF61E15907000DBF45C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB4FCF021E15907000DBF45C /* Assets.xcassets in Resources */,
+				DB4FCF051E15907000DBF45C /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB4FCEF41E15907000DBF45C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB4FCF001E15907000DBF45C /* main.m in Sources */,
+				DB4FCEFD1E15907000DBF45C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DB4FCF031E15907000DBF45C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB4FCF041E15907000DBF45C /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB4FCF071E15907000DBF45C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DB4FCF081E15907000DBF45C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DB4FCF0A1E15907000DBF45C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KeyMapper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.honsiorovskyi.KeyMapper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DB4FCF0B1E15907000DBF45C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KeyMapper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.honsiorovskyi.KeyMapper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB4FCEF31E15907000DBF45C /* Build configuration list for PBXProject "KeyMapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB4FCF071E15907000DBF45C /* Debug */,
+				DB4FCF081E15907000DBF45C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB4FCF091E15907000DBF45C /* Build configuration list for PBXNativeTarget "KeyMapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB4FCF0A1E15907000DBF45C /* Debug */,
+				DB4FCF0B1E15907000DBF45C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB4FCEF01E15907000DBF45C /* Project object */;
+}
