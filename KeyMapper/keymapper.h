@@ -1,83 +1,36 @@
-//
-//  keymapper.h
-//  KeyMapper
-//
-//  Created by Denys Honsiorovskyi on 29/12/2016.
-//  Copyright © 2016 Denys Honsiorovskyi. All rights reserved.
-//
-
 #ifndef keymapper_h
 #define keymapper_h
 
 #include <Carbon/Carbon.h>
-
-
-void emulateKeyPress(CGKeyCode keyCode, CGEventFlags downFlags, CGEventFlags upFlags) {
-    CGEventRef keyDown = CGEventCreateKeyboardEvent (NULL, keyCode, true);
-    CGEventRef keyUp   = CGEventCreateKeyboardEvent (NULL, keyCode, false);
-    
-    CGEventSetFlags(keyDown, downFlags);
-    CGEventSetFlags(keyUp, upFlags);
-    
-    
-    CGEventPost(kCGHIDEventTap, keyDown);
-    CFRelease(keyDown);
-    
-    CGEventPost(kCGHIDEventTap, keyUp);
-    CFRelease(keyUp);
-}
-
+#include "keys.h"
+#include "touchpad.h"
 
 
 
 CGEventRef eventCallback (CGEventTapProxy proxy, CGEventType type, CGEventRef event, void *refcon) {
-    CGEventFlags flags = CGEventGetFlags(event);
-    CGKeyCode keyCode = CGEventGetIntegerValueField(event, kCGKeyboardEventKeycode);
-    
-    // remap option to cmd + space
-    if ((flags & kCGEventFlagMaskAlternate) && (keyCode == kVK_Option)) {
-        emulateKeyPress(kVK_Space, kCGEventFlagMaskCommand, kCGEventFlagMaskCommand);
-        fprintf(stdout, "-- lang change\n");
-        return event;
+    switch (type) {
+        case kCGEventKeyDown:
+        case kCGEventKeyUp:
+            return handleKeyboard(proxy, type, event, refcon);
+            
+        case kCGKindaPressureEvent:
+        case kCGEventLeftMouseUp:
+        case kCGEventLeftMouseDown:
+            return handleTouchpad(proxy, type, event, refcon);
     }
-    
-    // remap fn + {key} to ctrl + {key} for non-functional keys
-    if (
-        (flags & kCGEventFlagMaskSecondaryFn)
-        && !(flags & kCGEventFlagMaskNumericPad)
-        && (keyCode >= 0x0 && keyCode <= 0x32) // alphanumeric
-        ) {
-        CGEventSetFlags(event, kCGEventFlagMaskControl);
-        fprintf(stdout, "-- ctrl + letter\n");
-        return event;
-    }
-    
-    // remap paragraph to backtick
-    if (keyCode == 0xa) { // paragraph key
-        CGEventSetIntegerValueField(event, kCGKeyboardEventKeycode, 0x32); // backtick
-        fprintf(stdout, "-- backtick\n");
-        return event;
-    }
-    
-    // remap backtick to paragraph
-    if (keyCode == 0x32) { // backtick key
-        CGEventSetIntegerValueField(event, kCGKeyboardEventKeycode, 0xa); // paragraph
-        fprintf(stdout, "-- paragraph\n");
-        return event;
-    }
-    
     
     return event;
 }
-
 
 void initKeyMapper()
 {
     // Specify an event mask.
     CGEventMask eventMask = (
-                             CGEventMaskBit(kCGEventFlagsChanged) |
                              CGEventMaskBit(kCGEventKeyDown) |
-                             CGEventMaskBit(kCGEventKeyUp)
+                             CGEventMaskBit(kCGEventKeyUp) |
+                             CGEventMaskBit(kCGKindaPressureEvent) |
+                             CGEventMaskBit(kCGEventLeftMouseUp) |
+                             CGEventMaskBit(kCGEventLeftMouseDown)
                              );
     
     // Create an event tap.

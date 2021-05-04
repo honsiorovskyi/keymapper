@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9AD14F642641C96700E0E857 /* touchpad.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD14F632641C96700E0E857 /* touchpad.m */; };
+		9ADE95802641C6AD00BC243A /* keys.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADE957F2641C6AD00BC243A /* keys.m */; };
 		DB4FCEFD1E15907000DBF45C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4FCEFC1E15907000DBF45C /* AppDelegate.m */; };
 		DB4FCF001E15907000DBF45C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4FCEFF1E15907000DBF45C /* main.m */; };
 		DB4FCF021E15907000DBF45C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4FCF011E15907000DBF45C /* Assets.xcassets */; };
@@ -15,6 +17,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9AD14F632641C96700E0E857 /* touchpad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = touchpad.m; sourceTree = "<group>"; };
+		9AD14F652641CA0400E0E857 /* touchpad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = touchpad.h; sourceTree = "<group>"; };
+		9ADE957F2641C6AD00BC243A /* keys.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = keys.m; sourceTree = "<group>"; };
+		9ADE95812641C6BD00BC243A /* keys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = keys.h; sourceTree = "<group>"; };
 		DB4FCEF81E15907000DBF45C /* KeyMapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyMapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB4FCEFB1E15907000DBF45C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DB4FCEFC1E15907000DBF45C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -60,6 +66,10 @@
 			children = (
 				DB4FCEFB1E15907000DBF45C /* AppDelegate.h */,
 				DBEA39A41E1591CE004FC01E /* keymapper.h */,
+				9AD14F632641C96700E0E857 /* touchpad.m */,
+				9AD14F652641CA0400E0E857 /* touchpad.h */,
+				9ADE957F2641C6AD00BC243A /* keys.m */,
+				9ADE95812641C6BD00BC243A /* keys.h */,
 				DB4FCEFC1E15907000DBF45C /* AppDelegate.m */,
 				DB4FCF011E15907000DBF45C /* Assets.xcassets */,
 				DB4FCF031E15907000DBF45C /* Interface.xib */,
@@ -125,6 +135,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -155,6 +166,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ADE95802641C6AD00BC243A /* keys.m in Sources */,
+				9AD14F642641C96700E0E857 /* touchpad.m in Sources */,
 				DB4FCF001E15907000DBF45C /* main.m in Sources */,
 				DB4FCEFD1E15907000DBF45C /* AppDelegate.m in Sources */,
 			);

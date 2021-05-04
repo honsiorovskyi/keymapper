@@ -1,10 +1,4 @@
 //
-//  AppDelegate.m
-//  KeyMapper
-//
-//  Created by Denys Honsiorovskyi on 29/12/2016.
-//  Copyright © 2016 Denys Honsiorovskyi. All rights reserved.
-//
 //  Icon made by Google from www.flaticon.com
 //
 
