@@ -17,6 +17,18 @@ void emulateKeyPress(CGKeyCode keyCode, CGEventFlags downFlags, CGEventFlags upF
 
 CGEventRef handleKeyboard (CGEventTapProxy proxy, CGEventType type, CGEventRef event, void *refcon) {
     CGKeyCode keyCode = CGEventGetIntegerValueField(event, kCGKeyboardEventKeycode);
+    CGEventFlags flags = CGEventGetFlags(event);
+    
+    // remap fn + {key} to ctrl + {key} for non-functional keys
+    if (
+        (flags & kCGEventFlagMaskSecondaryFn)
+        && !(flags & kCGEventFlagMaskNumericPad)
+        && (keyCode >= 0x0 && keyCode <= 0x32) // alphanumeric
+        ) {
+        CGEventSetFlags(event, kCGEventFlagMaskControl);
+        fprintf(stdout, "-- ctrl + letter\n");
+        return event;
+    }
     
     // remap paragraph to backtick
     if (keyCode == 0xa) { // paragraph key

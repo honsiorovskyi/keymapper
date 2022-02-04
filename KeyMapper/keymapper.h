@@ -13,10 +13,10 @@ CGEventRef eventCallback (CGEventTapProxy proxy, CGEventType type, CGEventRef ev
         case kCGEventKeyUp:
             return handleKeyboard(proxy, type, event, refcon);
             
-        case kCGKindaPressureEvent:
-        case kCGEventLeftMouseUp:
-        case kCGEventLeftMouseDown:
-            return handleTouchpad(proxy, type, event, refcon);
+//        case kCGKindaPressureEvent:
+//        case kCGEventLeftMouseUp:
+//        case kCGEventLeftMouseDown:
+//            return handleTouchpad(proxy, type, event, refcon);
     }
     
     return event;
